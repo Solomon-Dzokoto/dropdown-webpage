@@ -1,0 +1,51 @@
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body header .group .nav {
+    display: none;
+  }
+  body header .group .nav button {
+    display: none;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .left-section {
+    margin: 0;
+    padding: 0;
+  }
+  body main .left-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body main .left-section p {
+    margin-top: -6px;
+    font-size: 15px;
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+  }
+  body main .left-section button {
+    margin-top: 5px;
+    margin-left: 35%;
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  body main .left-section buttonhover {
+    color: hsl(0, 0%, 8%);
+    background-color: #fff;
+  }
+  body main .left-section img {
+    margin-bottom: 15px;
+  }
+  body main .right-section {
+    order: -1;
+  }
+  body main .right-section img {
+    width: 375px;
+  }
+}
+
+/*# sourceMappingURL=styles-phone.css.map */

@@ -1,0 +1,157 @@
+@media screen and (max-width: 1600px) {
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    font-family: "Epilogue", arial;
+    background-color: hsl(0, 0%, 98%);
+    max-height: 100vh;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .sidebar {
+    display: none;
+  }
+  header .group {
+    display: flex;
+  }
+  header .group .snap {
+    margin-right: 22px;
+  }
+  header .group .menu {
+    display: none;
+  }
+  header a {
+    margin-right: 5px;
+    cursor: pointer;
+    color: hsl(0, 0%, 41%);
+    font-size: 14px;
+    text-decoration: none;
+  }
+  header a:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  header button {
+    padding: 8px 15px;
+    border: 1.5px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  header button:first-child {
+    border: none;
+    margin-right: 1.5rem;
+  }
+  header button:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  header img {
+    height: 100%;
+    width: 15%;
+    padding-right: 20px;
+  }
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+  }
+  header .nav .tooltip-box:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  header .nav .nav-items {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  header .nav .tooltip {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+  header .nav .dropdown1 {
+    width: 100px;
+    left: -50px;
+    top: 3px;
+  }
+  header .nav .dropdown2 {
+    width: 65px;
+    text-align: center;
+    height: 75px;
+    left: 122px;
+    top: 4px;
+  }
+  header .nav .dropdown1, header .nav .dropdown2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -100;
+    gap: 14px;
+    color: hsl(0, 0%, 41%);
+    padding: 13px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  header .nav .dropdown1 li, header .nav .dropdown2 li {
+    display: flex;
+    align-items: center;
+  }
+  header .nav .dropdown1 span, header .nav .dropdown2 span {
+    font-size: 14px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    box-sizing: border-box;
+    margin-top: 3rem;
+    box-sizing: border-box;
+  }
+  main .left-section {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 6.5rem;
+  }
+  main .left-section h1 {
+    font-size: 4.2rem;
+  }
+  main .left-section p {
+    margin-top: -2rem;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  main .left-section button {
+    margin-bottom: 3rem;
+    padding: 8px 20px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s linear;
+  }
+  main .left-section button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+  }
+  main .left-section img {
+    height: 1rem;
+    margin-right: 3rem;
+  }
+  main .right-section img {
+    width: 400px;
+    height: 480px;
+    align-self: center;
+    margin-right: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

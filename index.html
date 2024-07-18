@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" media="" href="phone.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+ <div class="container">
+  <header>
+    <div>
+      <div class="group">
+        <img class="snap" src="images/logo.svg" alt="logo">
+        <img class="menu"src="images/icon-menu.svg" alt="">
+        <div style="display:none" class="sidebar">
+
+          <img onclick= "closeMenu()" class="close" src="images/icon-close-menu.svg" alt="close menu">
+          <div class="nav1">
+            <div class="tooltip-box">
+              <div class="nav-items">
+                <a>Features</a>
+                <img src="images/icon-arrow-down.svg" alt="">
+              </div>
+                <div class="tooltip">
+                  <ul class="dropdown1">
+                    <li>
+                      <img src="images/icon-todo.svg" alt="todo list">
+                      <span>Todo List</span>
+                    </li>
+                    <li>
+                      <img src="images/icon-calendar.svg" alt="calendar">
+                      <span>Calendar</span>
+                    </li>
+                    <li>
+                      <img src="images/icon-reminders.svg" alt="reminders.">
+                      <span>Reminders</span>
+                    </li>
+                    <li>
+                      <img src="images/icon-planning.svg" alt="calendar">
+                      <span>Planning</span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="tooltip-box">
+              <div class="nav-items">
+                <a>Company</a>
+                <img src="images/icon-arrow-down.svg" alt="">
+              </div>
+                <div class="tooltip">
+                  <ul class="dropdown2">
+                    <li>
+                      <span>History</span>
+                    </li>
+                    <li>
+                      <span>Our Team</span>
+                    </li>
+                    <li>
+                      <span>Blog</span>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class="others">
+              <a href="#">Careers</a>
+              <a href="#">About</a>
+            </div>
+          </div>
+          <div class="user">
+            <button class="btn">Login</button>
+            <button class="btn"> Register</button>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="tooltip-box">
+            <div class="nav-items">
+              <a>Features</a>
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>
+              <div class="tooltip">
+                <ul class="dropdown1">
+                  <li>
+                    <img src="images/icon-todo.svg" alt="todo list">
+                    <span>Todo List</span>
+                  </li>
+                  <li>
+                    <img src="images/icon-calendar.svg" alt="calendar">
+                    <span>Calendar</span>
+                  </li>
+                  <li>
+                    <img src="images/icon-reminders.svg" alt="reminders.">
+                    <span>Reminders</span>
+                  </li>
+                  <li>
+                    <img src="images/icon-planning.svg" alt="calendar">
+                    <span>Planning</span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="tooltip-box">
+            <div class="nav-items">
+              <a>Company</a>
+              <img src="images/icon-arrow-down.svg" alt="">
+            </div>
+              <div class="tooltip">
+                <ul class="dropdown2">
+                  <li>
+                    <span>History</span>
+                  </li>
+                  <li>
+                    <span>Our Team</span>
+                  </li>
+                  <li>
+                    <span>Blog</span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+    </div>
+    <div class="user">
+      <button>Login</button>
+      <button> Register</button>
+    </div>
+  </header>
+  <main >
+    <div class="left-section">
+      <h1>Make  remote work</h1>
+      <p>Get your team in sync, no matter your location. <br>Streamline processes, 
+        create team rituals, and <br>
+        watch productivity soar.</p>
+        <div> <button>Learn more</button></div>
+        
+        <div class="bottom-img">
+          <img src="images/client-databiz.svg" alt="databiz">
+          <img src="images/client-audiophile.svg" alt="audiophile">
+          <img src="images/client-meet.svg" alt="meet">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+    </div>
+    <div class="right-section"><img src="images/image-hero-desktop.png" alt="page image"></div>
+  </main>
+ </div>
+
+  <!--<div class="attribution"> 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    -->
+
+    <script>
+     const navItems=document.querySelector('.nav-items');
+     const tooltip=document.querySelector('.tooltip');
+
+     navItems.addEventListener('mouseover',()=>{
+      tooltip.classList.toggle("show")
+     })
+
+     function closeMenu(){
+const sidebar=doument.querySelector('.sidebar');
+    close.style.display="none"
+     };
+     function showMenu(){
+const sidebar=doument.querySelector('.sidebar');
+    close.style.display="flex"
+     };
+
+
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body .container {
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  body header {
+    box-sizing: border-box;
+  }
+  body header .menu {
+    width: 50%;
+    margin-left: 11rem;
+  }
+  body header .sidebar {
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-bottom: 1rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px hsl(0, 0%, 41%);
+    width: 52%;
+  }
+  body header .sidebar .close {
+    height: 25px;
+    margin-left: 8.5rem;
+    margin-top: 1rem;
+  }
+  body header .sidebar .user {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .sidebar .user .btn {
+    padding: 8px 15px;
+    border: 1.5px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  body header .sidebar .user .btn:first-child {
+    border: none;
+    margin-right: 1.5rem;
+  }
+  body header .sidebar .user .btn:hover {
+    color: hsl(0, 0%, 8%);
+  }
+  body header .sidebar .nav1 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8.8rem;
+    align-items: start;
+  }
+  body header .sidebar .nav1 .nav-items {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  body header .sidebar .nav1 .tooltip {
+    visibility: hiddn;
+    opacity: 0.8;
+  }
+  body header .sidebar .nav1 .dropdown1 {
+    width: 100px;
+    top: 3.5rem;
+  }
+  body header .sidebar .nav1 .dropdown2 {
+    width: 65px;
+    text-align: center;
+    height: 75px;
+    top: 13.5rem;
+  }
+  body header .sidebar .nav1 .dropdown1, body header .sidebar .nav1 .dropdown2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: -100;
+    gap: 14px;
+    color: hsl(0, 0%, 41%);
+    padding: 13px;
+    border-radius: 5px;
+  }
+  body header .sidebar .nav1 .dropdown1 li, body header .sidebar .nav1 .dropdown2 li {
+    display: flex;
+    align-items: center;
+  }
+  body header .sidebar .nav1 .dropdown1 span, body header .sidebar .nav1 .dropdown2 span {
+    font-size: 14px;
+  }
+  body header .sidebar .nav1 .others {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  body header .group .snap {
+    width: 70%;
+  }
+  body header .group .nav {
+    display: none;
+  }
+  body header button {
+    display: none;
+  }
+  body main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .left-section {
+    margin: 0;
+    padding: 0;
+  }
+  body main .left-section h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body main .left-section p {
+    margin-top: -6px;
+    font-size: 14px;
+    text-align: center;
+    color: hsl(0, 0%, 41%);
+  }
+  body main .left-section button {
+    margin-top: 5px;
+    margin-left: 35%;
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  body main .left-section buttonhover {
+    color: hsl(0, 0%, 8%);
+    background-color: #fff;
+  }
+  body main .left-section img {
+    width: 10%;
+    margin-bottom: 15px;
+  }
+  body main .right-section {
+    order: -1;
+  }
+  body main .right-section img {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=phone.css.map */
